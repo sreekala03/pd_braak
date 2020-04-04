@@ -14,7 +14,7 @@ ontology <- read.csv(paste0(ahba_download, "/normalized_microarray_donor9861/Ont
 probeInfo <- read.csv(paste0(ahba_download, "/normalized_microarray_donor9861/Probes.csv")) # Same for each donor
 
 # Read expression data for each donor (probes x samples)
-brainExpr <- lapply(donorNames, function(d){
+brainExpr <- lapply(donorNames??, function(d){
   file1 <- paste0(ahba_download, "/normalized_microarray_", d, "/MicroarrayExpression.csv")
   e <- read.csv(file1, header = FALSE)
   rownames(e) <- e[,1]
